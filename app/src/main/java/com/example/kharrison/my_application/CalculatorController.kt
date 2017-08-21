@@ -117,7 +117,7 @@ class CalculatorController(val view : View) {
          MULTIPLICATION -> multiply(leftNum, rightNum)
          DIVISION -> division(leftNum, rightNum)
       }
-
+      invalidateControls()
    }
 
    private fun add(leftNum : Int, rightNum : Int) {
